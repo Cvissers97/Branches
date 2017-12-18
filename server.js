@@ -15,6 +15,8 @@ app.use(bodyParser.json({
 	type: 'application/vnd.api+json'
 })); // parse application/vnd.api+json as json
 
+//Skarin verandering whee
+
 app.use(logger('dev'));
 
 app.use('*', function (req, res, next) {
