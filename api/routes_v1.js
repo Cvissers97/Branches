@@ -4,13 +4,13 @@ var routes = express.Router();
 
 module.exports = {}
 
-var mijnObject = {
+var myObject = {
 	mijntekst: 'Hello World!'
 };
 
 routes.get('/hello', function (req, res) {
 	res.status(200);
-	res.json(mijnObject);
+	res.json(myObject);
 });
 
 routes.post('/hello', function (req, res) {
@@ -19,7 +19,7 @@ routes.post('/hello', function (req, res) {
 	console.dir(body);
 
 	res.status(200);
-	res.json(mijnObject);
+	res.json(myObject);
 
 });
 
