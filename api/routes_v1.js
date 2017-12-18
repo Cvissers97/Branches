@@ -13,6 +13,11 @@ routes.get('/hello', function (req, res) {
 	res.json(mijnObject);
 });
 
+routes.get('/check', function (req, res) {
+	res.status(200);
+	res.json({'Status:' : 200});
+});
+
 routes.post('/hello', function (req, res) {
 	var body = req.body;
 
